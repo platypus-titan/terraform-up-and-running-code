@@ -10,7 +10,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
- source = "C:\Users\blykins\OneDrive - Hyland Software\Documents\tfur\terraform-up-and-running-code\code\terraform\04-terraform-module\module-example\modules\services\webserver-cluster"
+source = "C:\tfur\terraform-up-and-running-code\code\terraform\04-terraform-module\module-example\modules\services\webserver-cluster"
 }
 
 resource "aws_launch_configuration" "example" {
