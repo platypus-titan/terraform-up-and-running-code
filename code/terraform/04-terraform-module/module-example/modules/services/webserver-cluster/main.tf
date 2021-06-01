@@ -9,13 +9,9 @@ provider "aws" {
   version = "~> 2.0"
 }
 
-provider "aws" {
- region = "us-east-2"
-}
 module "webserver_cluster" {
  source = "C:\Users\blykins\OneDrive - Hyland Software\Documents\tfur\terraform-up-and-running-code\code\terraform\04-terraform-module\module-example\modules\services\webserver-cluster"
 }
-
 
 resource "aws_launch_configuration" "example" {
   image_id        = "ami-0c55b159cbfafe1f0"
